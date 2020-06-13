@@ -1,8 +1,8 @@
 import torch
 import numba
 
-n_arms = 3
-mu_arms = torch.tensor([0.1, 0.2, 0.3])
+mu_arms = torch.tensor([0.1, 0.2, 0.3, 0.4, 0.5])
+n_arms = len(mu_arms)
 
 def method_fully_random_selection(n_epochs=1000, disp_flag=False):
     n_arms = len(mu_arms)
