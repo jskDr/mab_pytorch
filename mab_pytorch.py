@@ -40,6 +40,8 @@ def method_greedy_selection_one(n_epochs=1000, disp_flag=False):
             print(arm, reward, ' --> ', Q)
     return Q, N, reward_list
 
+#def method_thompson_sampling_one()
+
 def method_greedy_selection(n_epochs=1000, n_trials=2, disp_flag=False):
     n_arms = len(mu_arms)
     Q_ntrials = torch.zeros(n_arms, n_trials)
